@@ -1,0 +1,2 @@
+def Teste():
+    return 'Funcionando'
