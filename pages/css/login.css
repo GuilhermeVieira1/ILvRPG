@@ -1,0 +1,169 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+/*CABEÇALHO*/
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    background: linear-gradient(180deg, #8E13C8 0%, #1E1E1E 98.14%);
+}
+
+@font-face {
+    font-family: 'BrightDiamondPersonalUseOnl-OV2Ze';
+    src: url('../style/font/Yasmen.ttf') format('opentype');
+} 
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 90%;
+    justify-content: row;
+    align-items: center;
+    justify-content: space-around;  
+    height: 60%;
+    background-color: #1E1E1E;
+}
+
+li{
+    margin: 20px;
+}
+
+#nome{
+    font-family: 'BrightDiamondPersonalUseOnl-OV2Ze', sans-serif;
+    font-size: 7vh;
+    background: linear-gradient(to right, #000000, #8d21c0 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 2vh;
+}
+
+#logo{
+    width: 15%;
+    min-width: 50vh;
+    border-radius: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    box-shadow: 0 0 2px #5d0686, 0 0 8px #5d0686, 0 0 10px #5d0686, 0 0 50px #5d0686;
+}
+
+#opcoes_de_navegacao{
+    width: 85%;
+    min-width: 50vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#caixa_menu_nav{
+    height: 100%;
+    width: 90%;
+}
+/*NAVEGAÇÃO MENU CABEÇALHO*/
+
+
+
+/*CAIXA CONTEUDO*/
+
+main {
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
+    width: 65%;
+    min-width: 110vh;
+}
+
+.alinahmento_inputs_cadastro_login {
+    margin-top: 8vh;
+}
+
+#lado_cadastro {
+    width: 50%;
+}
+
+#caixa_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+#caixa_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#alinhamento_inputs_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.caixa_input {
+    position: relative;
+    margin: 20px;
+}
+
+.inputs {
+    padding: 6px;
+    border-radius: 5px;
+    font: inherit;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.label_inputs {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform 0.25s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+.inputs:focus-visible~.label_inputs,
+.inputs:valid~.label_inputs {
+    transform: translate(0, -15px) scale(0.8);
+    color: rebeccapurple;
+}
+
+.input__field:is(:focus-visible, :valid) {
+    outline-color: black;
+}
+
+
+#lado_login {
+    width: 50%;
+}
+
+/*RODAPÉ*/
