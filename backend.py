@@ -1,6 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template
 from rotas.main import Main
-from rotas.login import Login
 from rotas.mapa import Mapa
 from rotas.ficha import Ficha
 from rotas.personagem import Personagem
@@ -13,7 +12,7 @@ from rotas.game import Game
 from rotas.assinatura import Assinatura
 from rotas.teste import Teste
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='pages')
 
 @app.route('/')
 def rotaMain():
@@ -21,7 +20,7 @@ def rotaMain():
 
 @app.route('/login')
 def rotaLogin():
-    return Login()
+    return render_template('login.html')
 
 @app.route('/mapa')
 def rotaMapa():
